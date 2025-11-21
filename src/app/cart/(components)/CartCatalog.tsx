@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { API } from "@/lib/api";
 import { addToast, Card, CardBody, CardFooter, Button, Image } from "@heroui/react";
-import { Fintoc } from 'fintoc';
+// import { Fintoc } from 'fintoc';
 
 
 export default function CartCatalog() {
@@ -22,17 +22,17 @@ export default function CartCatalog() {
     fetchCart();
   }, []);
 
-  const pay = async () => {
+  // const pay = async () => {
 
-    const fintoc = new Fintoc(process.env.NEXT_FINTOC_SECRET_KEY!);
+  //   // const fintoc = new Fintoc(process.env.NEXT_FINTOC_SECRET_KEY!);
 
-    const checkoutSession = await fintoc.checkoutSessions.create({
-      amount: 1000,
-      currency: 'mxn',
-      customer_email: 'name@example.com'
-    });
+  //   const checkoutSession = await fintoc.checkoutSessions.create({
+  //     amount: 1000,
+  //     currency: 'mxn',
+  //     customer_email: 'name@example.com'
+  //   });
 
-  }
+  // }
 
   // const removeItem = async (itemId) => {
   //   try {
@@ -95,7 +95,7 @@ export default function CartCatalog() {
         </div>
       )}
 
-      <Button radius="full" className="bg-black text-white" onPress={() => pay()}>
+      <Button radius="full" className="bg-black text-white">
         Pagar
       </Button>
     </div>
