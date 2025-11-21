@@ -34,7 +34,7 @@ export default function AppNavbar() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link aria-current="page" color="black" href="/dashboard">
+          <Link aria-current="page" href="/dashboard">
             Tienda
           </Link>
         </NavbarItem>
@@ -51,8 +51,7 @@ export default function AppNavbar() {
           <DropdownTrigger>
             <Avatar
               isBordered
-              as="button"              
-              color="black"              
+              as="button"                                        
               size="sm"              
               className="transition-transform text-white text-md font-semibold bg-black text-white"
               name={"PEPE"}
@@ -69,7 +68,7 @@ export default function AppNavbar() {
             {/* <DropdownItem key="system">System</DropdownItem> */}
             {/* <DropdownItem key="configurations">Ajustes</DropdownItem> */}
             {/* <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem> */}
-            <DropdownItem key="logout" color="danger" onClick={() => {logout()}}>
+            <DropdownItem key="logout" color="danger" >
               Cerrar Sesión
             </DropdownItem>
           </DropdownMenu>

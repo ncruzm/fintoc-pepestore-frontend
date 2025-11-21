@@ -9,6 +9,17 @@ import {
   Image
 } from "@heroui/react";
 
+// interface ProductCardProps {
+//   product: {
+//     id: string;
+//     name: string;
+//     description: string;
+//     price: number;
+//     imageUrl: string;
+//   };
+//   onAdd: (product: ProductCardProps["product"]) => void;
+// }
+
 export default function ProductCard({ product, onAdd }) {
   return (
     <Card
